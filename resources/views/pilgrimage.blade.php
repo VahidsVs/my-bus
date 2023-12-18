@@ -24,6 +24,8 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ asset('assets/jalalidatepicker/persian-datepicker.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/select2/css/select2.min.css') }}">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" />
@@ -38,7 +40,7 @@
         .img-main {
             width: 100%;
             max-width: 100%;
-            height: 55vh;
+            height: 60vh;
         }
 
         .img-service {
@@ -74,11 +76,11 @@
         }
 
         .bg-f2f4fb {
-            background-color: #f2f4fb!important;
+            background-color: #f2f4fb !important;
         }
 
         .box-shadow {
-            box-shadow: 2px 2px 10px 5px rgba(0,0,0,.1)
+            box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, .1)
         }
     </style>
 </head>
@@ -96,8 +98,8 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-dark sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5 m-0">
-            <img src="{{ asset('assets/img/bus-logo.png') }}" class="img-fluid bg-warning rounded-1" style="width: 100px; height: 150px;"
-                alt="">
+            <img src="{{ asset('assets/img/bus-logo.png') }}" class="img-fluid bg-warning rounded-1"
+                style="width: 100px; height: 150px;" alt="">
             <!-- <h4 class="mb-2 text-dark" style="font-family: 'Courier New', Courier, monospace;">اتوبوس من</h4> -->
         </a>
         <button type="button" class="navbar-toggler ms-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -119,19 +121,30 @@
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0">
-        <img class="img-fluid img-main" src="{{ asset('assets/img/bus-2.avif') }}" alt="" />
+        <img class="img-fluid img-main" src="{{ asset('assets/img/haram.jpeg') }}" alt="" />
     </div>
     <!-- Carousel End -->
 
     <!-- Service Start -->
     <div class="py-5">
-        <div class="container-xxl box-shadow" style="border: 1px solid #cccccc; border-radius: 1rem 1rem 0 0;background-color: #ffffff">
+        <div class="container-xxl box-shadow"
+            style="border: 1px solid #cccccc; border-radius: 1rem 1rem 0 0;background-color: #ffffff">
             <div class="container">
                 <div class="nav nav-tabs border-bottom-0 border-top-0" id="nav-tab" role="tablist">
-                    <button class="nav-link f-14px active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style="color: rgb(0, 0, 0);">درون شهری</button>
-                    <button class="nav-link f-14px" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" style="color: rgb(0, 0, 0);">برون شهری</button>
-                    <button class="nav-link f-14px" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" style="color: rgb(0, 0, 0);">برون مرزی</button>
-                  </div>
+                    <button class="nav-link f-14px active" id="nav-home-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                        aria-selected="true" style="color: rgb(0, 0, 0);">داخلی - فروش بلیط انفرادی</button>
+                    <button class="nav-link f-14px" id="nav-profile-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                        aria-selected="false" style="color: rgb(0, 0, 0);">داخلی - فروش بلیط انفرادی داخل کشور
+                        عراق</button>
+                    <button class="nav-link f-14px" id="nav-contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                        aria-selected="false" style="color: rgb(0, 0, 0);">خاک عراق - دربستی تا نقطه صفر مرزی</button>
+                    <button class="nav-link f-14px" id="nav-contact-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                        aria-selected="false" style="color: rgb(0, 0, 0);">خاک عراق - دربستی داخل خاک عراق</button>
+                </div>
             </div>
         </div>
         <div class="p-0">
@@ -149,23 +162,35 @@
                         </div>
                         <div class="row">
                             <div class="col-md-3 px-1 mb-3">
-                                <input type="text" class="form-control rounded-1" id="validationServer01"
-                                    placeholder="مبدا(شهر)">
+                                <select class="select2 form-control form-control-sm rounded-1"
+                                    aria-label="Default select example" id="select-tags-province">
+                                    <option></option>
+                                    <option value="1">تهران</option>
+                                    <option value="2">البرز</option>
+                                    <option value="3">کرمان</option>
+                                </select>
                             </div>
                             <div class="col-md-3 px-1 mb-3">
-                                <input type="text" class="form-control rounded-1" id="validationServer02"
-                                    placeholder="مقصد(شهر)">
+                                <select class="select2 form-control form-control-sm rounded-1"
+                                    aria-label="Default select example" id="select-tags-terminal">
+                                    <option></option>
+                                    <option value="1">پایانه مرزی مهران</option>
+                                    <option value="2">پایانه مرزی خسروی</option>
+                                    <option value="3">پایانه مرزی چذابه</option>
+                                    <option value="4">پابانه مرزی تمرین</option>
+                                    <option value="5">پابانه مرزی باشماغ</option>
+                                </select>
                             </div>
                             <div class="col-md-2 px-1 mb-3">
-                                <input type="text" class="form-control rounded-1" id="validationServer01"
-                                    placeholder="تاریخ رفت">
+                                <input type="text" class="form-control form-control-sm rounded-1"
+                                    id="departure-date" placeholder="تاریخ رفت">
                             </div>
                             <div class="col-md-2 px-1 mb-3">
-                                <input type="text" class="form-control rounded-1" id="validationServer02"
+                                <input type="text" class="form-control form-control-sm rounded-1" id="return-date"
                                     placeholder="تاریخ برگشت">
                             </div>
                             <div class="col-md-1 px-1 mb-3">
-                                <button type="submit" class="btn btn-warning rounded-1 px-5">جستجو</button>
+                                <button type="submit" class="btn btn-sm btn-warning rounded-1 px-5">جستجو</button>
                             </div>
                         </div>
                     </form>
@@ -176,7 +201,8 @@
     <!-- Service End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" style="margin-top: 40px;" data-wow-delay="0.1s">
+    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" style="margin-top: 40px;"
+        data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
@@ -186,9 +212,11 @@
                     <p class="mb-2"><i class="fa fa-envelope ms-3"></i>mybus@gmail.com</p>
                     <div class="d-flex pt-2 d-none">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i
+                                class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 d-none">
@@ -211,7 +239,8 @@
                     <h4 class="text-light mb-4">Newsletter</h4>
                     <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
                         <button type="button"
                             class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                     </div>
@@ -236,19 +265,53 @@
     <!-- Footer End
 
     Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="{{ asset('assets/lib/wow/wow.min.js') }}"></script>
+    {{-- <script src="lib/easing/easing.min.js"></script> --}}
+    {{-- <script src="lib/waypoints/waypoints.min.js"></script> --}}
+    {{-- <script src="lib/counterup/counterup.min.js"></script> --}}
+    {{-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> --}}
 
     <!-- Template Javascript -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script src="{{ asset('assets/jalalidatepicker/persian-date.min.js') }}"></script>
+    <script src="{{ asset('assets/jalalidatepicker/persian-datepicker.min.js') }}"></script>
+    <script src="{{ asset('assets/select2/js/select2.min.js') }}"></script>
+    {{-- datePicker --}}
+    <script>
+        $(document).ready(function() {
+            $("#departure-date").persianDatepicker({
+                format: 'YYYY/MM/DD'
+            });
+
+            $("#return-date").persianDatepicker({
+                format: 'YYYY/MM/DD'
+            });
+        });
+    </script>
+
+    {{-- select2 --}}
+    <script>
+        $(document).ready(function() {
+            var select_tags_province = $('#select-tags-province');
+            var select_tags_terminal = $('#select-tags-terminal');
+
+            select_tags_province.select2({
+                placeholder: 'مبدا(شهر)',
+                allowClear: true
+            })
+
+            select_tags_terminal.select2({
+                placeholder: 'فروش بلیط انفرادی',
+                allowClear: true
+            })
+        });
+    </script>
 </body>
 
 </html>

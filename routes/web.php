@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'home'])->name('home.index');
 Route::get('/ticket', [HomeController::class, 'ticket'])->name('home.ticket');
 Route::get('/close', [HomeController::class, 'close'])->name('home.close');
+Route::get('/pilgrimage', [HomeController::class, 'pilgrimage'])->name('home.pilgrimage');
 

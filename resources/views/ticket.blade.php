@@ -128,8 +128,7 @@
         <div class="container-xxl box-shadow" style="border: 1px solid #cccccc; border-radius: 1rem 1rem 0 0;background-color: #ffffff">
             <div class="container">
                 <div class="nav nav-tabs border-bottom-0 border-top-0" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">خانه</button>
-                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">برون شهری</button>
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">برون شهری</button>
                     <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">برون مرزی</button>
                   </div>
             </div>

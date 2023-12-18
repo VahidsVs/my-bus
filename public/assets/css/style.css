@@ -10,6 +10,7 @@
     direction: rtl;
     text-align: right;
     font-family: 'IRANSans';
+    font-size: 15px;
 }
 
 /********** Template Static CSS **********/
@@ -182,7 +183,7 @@
         position: relative;
         min-height: 500px;
     }
-    
+
     .header-carousel .owl-carousel-item img {
         position: absolute;
         width: 100%;
