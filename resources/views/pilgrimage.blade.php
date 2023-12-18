@@ -40,7 +40,7 @@
         .img-main {
             width: 100%;
             max-width: 100%;
-            height: 60vh;
+            height: 73vh;
         }
 
         .img-service {
@@ -58,7 +58,7 @@
         }
 
         .f-14px {
-            font-size: 14px;
+            font-size: 14px !important;
         }
 
         .bg-gray {
@@ -121,12 +121,43 @@
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0">
-        <img class="img-fluid img-main" src="{{ asset('assets/img/haram.jpeg') }}" alt="" />
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{ asset('assets/img/peakpx (4).jpg') }}" class="d-block w-100 img-main" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('assets/img/peakpx (1).jpg') }}" class="d-block w-100 img-main" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('assets/img/peakpx.jpg') }}" class="d-block w-100 img-main" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        {{-- <img class="img-fluid img-main" src="{{ asset('assets/img/peakpx.jpg') }}" alt="" /> --}}
     </div>
     <!-- Carousel End -->
 
     <!-- Service Start -->
-    <div class="py-5">
+    <div class="py-5 position-relative" style="margin-top: -5.6rem">
         <div class="container-xxl box-shadow"
             style="border: 1px solid #cccccc; border-radius: 1rem 1rem 0 0;background-color: #ffffff">
             <div class="container">
@@ -154,7 +185,7 @@
                     <form class="px-4">
                         <div class="row">
                             <div class="col-3 px-1 mb-3">
-                                <select class="form-select form-select rounded-1">
+                                <select class="select2 form-select form-select rounded-1" id="select_tags_direction">
                                     <option value="1">یک طرفه</option>
                                     <option value="2">دو طرفه</option>
                                 </select>
@@ -300,6 +331,11 @@
         $(document).ready(function() {
             var select_tags_province = $('#select-tags-province');
             var select_tags_terminal = $('#select-tags-terminal');
+            var select_tags_direction = $('#select_tags_direction');
+
+            select_tags_direction.select2({
+                minimumResultsForSearch: -1
+            })
 
             select_tags_province.select2({
                 placeholder: 'مبدا(شهر)',

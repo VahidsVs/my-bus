@@ -6,20 +6,20 @@
     font-weight: normal;
 }
 
-* {
+*:not(i){
     direction: rtl;
     text-align: right;
-    font-family: 'IRANSans';
-    font-size: 15px;
+    font-family: 'IRANSans'!important;
+    font-size: 15px!important;
 }
 
 /********** Template Static CSS **********/
-:root {
+/* :root {
     --primary: #FF3E41;
     --secondary: #51CFED;
     --light: #F8F2F0;
     --dark: #060315;
-}
+} */
 
 .fw-medium {
     font-weight: 600 !important;

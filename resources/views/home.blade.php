@@ -59,6 +59,10 @@
             font-size: 14px;
         }
 
+        .fcolor-0d6efd {
+            color: #0d6efd;
+        }
+
         .bg-gray {
             background-color: #f9f9f9;
         }
@@ -110,7 +114,7 @@
         <div class="container-xxl">
             <div class="container">
                 <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-secondary text-uppercase">خدمات ما</h5>
+                    <h5 class="fcolor-0d6efd">خدمات ما</h5>
                     <h5 class="mb-5">در مورد خدمات ما بیشتر بخوانید</h5>
                 </div>
                 <div class="row g-4">
@@ -126,9 +130,9 @@
                                         <div class="py-4 pe-2">
                                             <div class="d-flex justify-content-between">
                                                 <h6 class="mb-3">فروش بلیط مسافر</h6>
-                                                <i class="fas fa-ticket-alt ms-3"></i>
+                                                <i class="fas fa-ticket-alt ms-3 fcolor-0d6efd"></i>
                                             </div>
-                                            <p class="f-14px font-weight-bold">آسان ترین راه رزرو و خرید بلیط اتوبوس در
+                                            <p class="f-14px font-weight-bold text-black-50">آسان ترین راه رزرو و خرید بلیط اتوبوس در
                                                 سایت
                                                 اتوبوس من را تجربه کنید و ...</p>
                                         </div>
@@ -149,9 +153,9 @@
                                         <div class="py-4 pe-2">
                                             <div class="d-flex justify-content-between">
                                                 <h6 class="mb-3">دربستی</h6>
-                                                <i class="fas fa-ticket-alt ms-3"></i>
+                                                <i class="fas fa-ticket-alt ms-3 fcolor-0d6efd"></i>
                                             </div>
-                                            <p class="f-14px font-weight-bold">آسان ترین راه رزرو و خرید بلیط اتوبوس در
+                                            <p class="f-14px font-weight-bold text-black-50">آسان ترین راه رزرو و خرید بلیط اتوبوس در
                                                 سایت
                                                 اتوبوس من را تجربه کنید و ...</p>
                                         </div>
@@ -172,9 +176,9 @@
                                         <div class="py-4 pe-2">
                                             <div class="d-flex justify-content-between">
                                                 <h6 class="mb-3">اربعین</h6>
-                                                <i class="fas fa-ticket-alt ms-3"></i>
+                                                <i class="fas fa-ticket-alt ms-3 fcolor-0d6efd"></i>
                                             </div>
-                                            <p class="f-14px font-weight-bold">آسان ترین راه رزرو و خرید بلیط اتوبوس در
+                                            <p class="f-14px font-weight-bold text-black-50">آسان ترین راه رزرو و خرید بلیط اتوبوس در
                                                 سایت
                                                 اتوبوس من را تجربه کنید و ...</p>
                                         </div>
@@ -195,9 +199,9 @@
                                     <div class="py-4 pe-2">
                                         <div class="d-flex justify-content-between">
                                             <h6 class="mb-3">سامانه رزرواسیون مراکز اقامتی</h6>
-                                            <i class="fas fa-ticket-alt ms-3"></i>
+                                            <i class="fas fa-ticket-alt ms-3 fcolor-0d6efd"></i>
                                         </div>
-                                        <p class="f-14px font-weight-bold">آسان ترین راه رزرو و خرید بلیط اتوبوس در
+                                        <p class="f-14px font-weight-bold text-black-50">آسان ترین راه رزرو و خرید بلیط اتوبوس در
                                             سایت
                                             اتوبوس من را تجربه کنید و ...</p>
                                     </div>
@@ -273,7 +277,6 @@
         </div>
     </div>
     {{-- <!-- Footer End --}}
-
 
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
