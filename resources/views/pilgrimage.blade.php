@@ -157,73 +157,190 @@
     <!-- Carousel End -->
 
     <!-- Service Start -->
-    <div class="py-5 position-relative" style="margin-top: -5.6rem">
+    {{-- <div class="py-5 position-relative" style="margin-top: -5.6rem"> --}}
+    <div class="py-5">
         <div class="container-xxl box-shadow"
             style="border: 1px solid #cccccc; border-radius: 1rem 1rem 0 0;background-color: #ffffff">
             <div class="container">
                 <div class="nav nav-tabs border-bottom-0 border-top-0" id="nav-tab" role="tablist">
-                    <button class="nav-link f-14px active" id="nav-home-tab" data-bs-toggle="tab"
-                        data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                        aria-selected="true" style="color: rgb(0, 0, 0);">داخلی - فروش بلیط انفرادی</button>
-                    <button class="nav-link f-14px" id="nav-profile-tab" data-bs-toggle="tab"
-                        data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
-                        aria-selected="false" style="color: rgb(0, 0, 0);">داخلی - فروش بلیط انفرادی داخل کشور
+                    <button onclick="myFunc('one')" class="nav-link f-14px active" id="nav-ticket-internal"
+                        data-bs-toggle="tab" data-bs-target="#nav-content-ticket-internal" type="button"
+                        role="tab" aria-controls="nav-home" aria-selected="true"
+                        style="color: rgb(0, 0, 0);">داخلی - فروش بلیط
+                        مسافر</button>
+                    <button onclick="myFunc('two')" class="nav-link f-14px" id="nav-close-internal"
+                        data-bs-toggle="tab" data-bs-target="#nav-content-close-internal" type="button"
+                        role="tab" aria-controls="nav-profile" aria-selected="false"
+                        style="color: rgb(0, 0, 0);">داخلی - دربستی
+                        نقطه صفر مرزی
                         عراق</button>
-                    <button class="nav-link f-14px" id="nav-contact-tab" data-bs-toggle="tab"
-                        data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
-                        aria-selected="false" style="color: rgb(0, 0, 0);">خاک عراق - دربستی تا نقطه صفر مرزی</button>
-                    <button class="nav-link f-14px" id="nav-contact-tab" data-bs-toggle="tab"
-                        data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
-                        aria-selected="false" style="color: rgb(0, 0, 0);">خاک عراق - دربستی داخل خاک عراق</button>
+                    <button onclick="myFunc('three')" class="nav-link f-14px" id="nav-ticket-foreign"
+                        data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
+                        aria-controls="nav-contact" aria-selected="false" style="color: rgb(0, 0, 0);">کشور عراق -
+                        فروش بلیط مسافر
+                        مرزی</button>
+                    <button onclick="myFunc('four')" class="nav-link f-14px" id="nav-close-processioners"
+                        data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
+                        aria-controls="nav-contact" aria-selected="false" style="color: rgb(0, 0, 0);">کشور عراق -
+                        دربستی ویژه موکبداران</button>
+                    <button onclick="myFunc('five')" class="nav-link f-14px" id="nav-close-public"
+                        data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
+                        aria-controls="nav-contact" aria-selected="false" style="color: rgb(0, 0, 0);">کشور عراق -
+                        دربستی عمومی</button>
                 </div>
             </div>
         </div>
-        <div class="p-0">
+
+
+        <div class="p-0 one-two-container">
             <div class="container-xxl box-shadow"
                 style="border-radius: 0 0 1rem 1rem;border: 1px solid #cccccc;border-top:none;background-color: #ffffff; display: flex; align-items: center;justify-content: center;width: 100%; padding: 40px 0">
                 <div class="container">
                     <form class="px-4">
                         <div class="row">
-                            <div class="col-3 px-1 mb-3">
-                                <select class="select2 form-select form-select rounded-1" id="select_tags_direction">
+                            <div class="col-3 px-1 mb-3 ms-3">
+                                <select class="select2 form-select form-select rounded-1 select-tags-direction-one">
                                     <option value="1">یک طرفه</option>
                                     <option value="2">دو طرفه</option>
                                 </select>
                             </div>
+                            <div class="col-3 px-1 mb-3 d-flex align-items-center">
+                                <i class="fa fa-plus text-success pluss" style="cursor: pointer"
+                                    onclick="counter('plus')"></i>
+                                <input type="text" class="form-control form-control-sm text-center mx-2 show-count"
+                                    value="0" style="width: 20%" placeholder="تعداد">
+                                <i class="fa fa-minus text-danger minuss" style="cursor: pointer"
+                                    onclick="counter('minus')"></i>
+                            </div>
                         </div>
+
                         <div class="row">
                             <div class="col-md-3 px-1 mb-3">
-                                <select class="select2 form-control form-control-sm rounded-1"
-                                    aria-label="Default select example" id="select-tags-province">
+                                <select class="form-control form-control-sm rounded-1 select-tags-province-one">
                                     <option></option>
-                                    <option value="1">تهران</option>
-                                    <option value="2">البرز</option>
+                                    <option value="1">آذربایجان شرقی</option>
+                                    <option value="2">آذربایجان غربی</option>
+                                    <option value="3">اردبیل</option>
+                                    <option value="3">اصفهان</option>
+                                    <option value="3">البرز</option>
+                                    <option value="3">اردبیل</option>
+                                    <option value="3">ایلام</option>
+                                    <option value="3">بوشهر</option>
+                                    <option value="3">تهران</option>
+                                    <option value="3">چهارمحال و بختیاری</option>
+                                    <option value="3">خراسان جنوبی</option>
+                                    <option value="3">خراسان رضوی</option>
+                                    <option value="3">خراسان شمالی</option>
+                                    <option value="3">خوزستان</option>
+                                    <option value="3">زنجان</option>
+                                    <option value="3">سمنان</option>
+                                    <option value="3">سیستان و بلوچستان</option>
+                                    <option value="3">فارس</option>
+                                    <option value="3">قزوین</option>
+                                    <option value="3">قم</option>
+                                    <option value="3">کردستان</option>
                                     <option value="3">کرمان</option>
+                                    <option value="3">کرمانشاه</option>
+                                    <option value="3">کهگیلویه و بویراحمد</option>
+                                    <option value="3">گلستان</option>
+                                    <option value="3">گیلان</option>
+                                    <option value="3">لرستان</option>
+                                    <option value="3">مازندران</option>
+                                    <option value="3">مرکزی</option>
+                                    <option value="3">هرمزگان</option>
+                                    <option value="3">همدان</option>
+                                    <option value="3">یزد</option>
                                 </select>
                             </div>
                             <div class="col-md-3 px-1 mb-3">
-                                <select class="select2 form-control form-control-sm rounded-1"
-                                    aria-label="Default select example" id="select-tags-terminal">
+                                <select class="form-control form-control-sm rounded-1 select-tags-terminal-one">
                                     <option></option>
                                     <option value="1">پایانه مرزی مهران</option>
                                     <option value="2">پایانه مرزی خسروی</option>
                                     <option value="3">پایانه مرزی چذابه</option>
-                                    <option value="4">پابانه مرزی تمرین</option>
-                                    <option value="5">پابانه مرزی باشماغ</option>
+                                    <option value="4">پابانه مرزی تمرچین</option>
+                                    <option value="5">پابانه مرزی باشماق</option>
+                                    <option value="6">پابانه مرزی شلمچه</option>
                                 </select>
                             </div>
                             <div class="col-md-2 px-1 mb-3">
                                 <input type="text" class="form-control form-control-sm rounded-1"
-                                    id="departure-date" placeholder="تاریخ رفت">
+                                    id="departure-date-one" placeholder="تاریخ رفت">
                             </div>
                             <div class="col-md-2 px-1 mb-3">
-                                <input type="text" class="form-control form-control-sm rounded-1" id="return-date"
-                                    placeholder="تاریخ برگشت">
+                                <input type="text" class="form-control form-control-sm rounded-1"
+                                    id="return-date-one" placeholder="تاریخ برگشت">
                             </div>
                             <div class="col-md-1 px-1 mb-3">
                                 <button type="submit" class="btn btn-sm btn-warning rounded-1 px-5">جستجو</button>
                             </div>
                         </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="p-0 three-four-five-container d-none">
+            <div class="container-xxl box-shadow"
+                style="border-radius: 0 0 1rem 1rem;border: 1px solid #cccccc;border-top:none;background-color: #ffffff; display: flex; align-items: center;justify-content: center;width: 100%; padding: 40px 0">
+                <div class="container">
+                    <form class="px-4">
+                        <div class="row">
+                            <div class="col-3 px-1 mb-3 ms-3">
+                                <select class="select2 form-select form-select rounded-1 select-tags-direction-two"
+                                    style="width: 100%">
+                                    <option value="1">یک طرفه</option>
+                                    <option value="2">دو طرفه</option>
+                                </select>
+                            </div>
+                            <div class="col-3 px-1 mb-3 d-flex align-items-center">
+                                <i class="fa fa-plus text-success pluss" style="cursor: pointer"
+                                    onclick="counter('plus')"></i>
+                                <input type="text" class="form-control form-control-sm text-center mx-2 show-count"
+                                    value="0" style="width: 20%" placeholder="تعداد">
+                                <i class="fa fa-minus text-danger minuss" style="cursor: pointer"
+                                    onclick="counter('minus')"></i>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3 px-1 mb-3">
+                                <select class="form-control form-control-sm rounded-1 select-tags-province-two"
+                                    style="width: 100%">
+                                    <option></option>
+                                    <option value="1">کربلای معلی</option>
+                                    <option value="1">نجف اشرف</option>
+                                    <option value="1">شهر کاظمین</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 px-1 mb-3">
+                                <select class="form-control form-control-sm rounded-1 select-tags-terminal-two"
+                                    style="width: 100%">
+                                    <option></option>
+                                    <option value="1">پایانه مرزی مهران</option>
+                                    <option value="2">پایانه مرزی خسروی</option>
+                                    <option value="3">پایانه مرزی چذابه</option>
+                                    <option value="4">پابانه مرزی تمرچین</option>
+                                    <option value="5">پابانه مرزی باشماق</option>
+                                    <option value="6">پابانه مرزی شلمچه</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2 px-1 mb-3">
+                                <input type="text" class="form-control form-control-sm rounded-1"
+                                    id="departure-date-two" placeholder="تاریخ رفت">
+                            </div>
+                            <div class="col-md-2 px-1 mb-3">
+                                <input type="text" class="form-control form-control-sm rounded-1"
+                                    id="return-date-two" placeholder="تاریخ برگشت">
+                            </div>
+                            <div class="col-md-1 px-1 mb-3">
+                                <button type="submit" class="btn btn-sm btn-warning rounded-1 px-5">جستجو</button>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
             </div>
@@ -293,9 +410,9 @@
             </div>
         </div>
     </div>
-    <!-- Footer End
+    <!-- Footer End -->
 
-    Back to Top -->
+    <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i
             class="bi bi-arrow-up"></i></a>
 
@@ -313,40 +430,103 @@
     <script src="{{ asset('assets/jalalidatepicker/persian-date.min.js') }}"></script>
     <script src="{{ asset('assets/jalalidatepicker/persian-datepicker.min.js') }}"></script>
     <script src="{{ asset('assets/select2/js/select2.min.js') }}"></script>
-    {{-- datePicker --}}
-    <script>
-        $(document).ready(function() {
-            $("#departure-date").persianDatepicker({
-                format: 'YYYY/MM/DD'
-            });
-
-            $("#return-date").persianDatepicker({
-                format: 'YYYY/MM/DD'
-            });
-        });
-    </script>
 
     {{-- select2 --}}
     <script>
         $(document).ready(function() {
-            var select_tags_province = $('#select-tags-province');
-            var select_tags_terminal = $('#select-tags-terminal');
-            var select_tags_direction = $('#select_tags_direction');
+            $("#departure-date-one").persianDatepicker({
+                format: 'YYYY/MM/DD'
+            });
 
-            select_tags_direction.select2({
+            $("#return-date-one").persianDatepicker({
+                format: 'YYYY/MM/DD'
+            });
+        });
+
+        $(document).ready(function() {
+            $("#departure-date-two").persianDatepicker({
+                format: 'YYYY/MM/DD'
+            });
+
+            $("#return-date-two").persianDatepicker({
+                format: 'YYYY/MM/DD'
+            });
+        });
+
+        $(document).ready(function() {
+            var select_tags_province_one = $('.select-tags-province-one');
+            var select_tags_terminal_one = $('.select-tags-terminal-one');
+            var select_tags_direction_one = $('.select-tags-direction-one');
+
+            select_tags_direction_one.select2({
                 minimumResultsForSearch: -1
             })
 
-            select_tags_province.select2({
+            select_tags_province_one.select2({
                 placeholder: 'مبدا(شهر)',
                 allowClear: true
             })
 
-            select_tags_terminal.select2({
-                placeholder: 'فروش بلیط انفرادی',
+            select_tags_terminal_one.select2({
+                placeholder: 'مقصد',
                 allowClear: true
             })
         });
+
+        $(document).ready(function() {
+            var select_tags_province_two = $('.select-tags-province-two');
+            var select_tags_terminal_two = $('.select-tags-terminal-two');
+            var select_tags_direction_two = $('.select-tags-direction-two');
+
+            select_tags_direction_two.select2({
+                minimumResultsForSearch: -1
+            })
+
+            select_tags_province_two.select2({
+                placeholder: 'مبدا(شهر)',
+                allowClear: true
+            });
+
+            select_tags_terminal_two.select2({
+                placeholder: 'مقصد',
+                allowClear: true
+            });
+        });
+
+        function deleteAllCalss() {
+            $('.one-two-container').removeClass('d-none');
+            $('.three-four-five-container').removeClass('d-none');
+            $('.one-two-container').removeClass('d-inline');
+            $('.three-four-five-container').removeClass('d-inline');
+        }
+
+        function myFunc(data) {
+            deleteAllCalss();
+            var result = parseInt(0);
+            $('.show-count').val(result);
+            if (data == 'one' || data == 'two') {
+                $('.one-two-container').addClass('d-inline');
+                $('.three-four-five-container').addClass('d-none');
+            } else if (data == 'three' || data == 'four' || data == 'five') {
+                $('.three-four-five-container').addClass('d-inline');
+                $('.one-two-container').addClass('d-none');
+            }
+        }
+
+        function counter(data) {
+            if (data == 'plus') {
+                var count = $('.show-count').val();
+                var result = parseInt(count) + 1;
+                $('.show-count').val(result);
+            }
+
+            if (data == 'minus') {
+                var count = $('.show-count').val();
+                var result = parseInt(count) - 1;
+                if (result >= 0)
+                    $('.show-count').val(result);
+            }
+        }
     </script>
 </body>
 
