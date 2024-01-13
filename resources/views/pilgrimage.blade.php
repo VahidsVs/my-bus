@@ -258,9 +258,9 @@
                                     <option value="1">پایانه مرزی مهران</option>
                                     <option value="2">پایانه مرزی خسروی</option>
                                     <option value="3">پایانه مرزی چذابه</option>
-                                    <option value="4">پابانه مرزی تمرچین</option>
-                                    <option value="5">پابانه مرزی باشماق</option>
-                                    <option value="6">پابانه مرزی شلمچه</option>
+                                    <option value="4">پایانه مرزی تمرچین</option>
+                                    <option value="5">پایانه مرزی باشماق</option>
+                                    <option value="6">پایانه مرزی شلمچه</option>
                                 </select>
                             </div>
                             <div class="col-md-2 px-1 mb-3">
@@ -323,9 +323,9 @@
                                     <option value="1">پایانه مرزی مهران</option>
                                     <option value="2">پایانه مرزی خسروی</option>
                                     <option value="3">پایانه مرزی چذابه</option>
-                                    <option value="4">پابانه مرزی تمرچین</option>
-                                    <option value="5">پابانه مرزی باشماق</option>
-                                    <option value="6">پابانه مرزی شلمچه</option>
+                                    <option value="4">پایانه مرزی تمرچین</option>
+                                    <option value="5">پایانه مرزی باشماق</option>
+                                    <option value="6">پایانه مرزی شلمچه</option>
                                 </select>
                             </div>
                             <div class="col-md-2 px-1 mb-3">
