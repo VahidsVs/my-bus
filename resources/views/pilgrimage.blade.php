@@ -204,13 +204,21 @@
                                     <option value="2">دو طرفه</option>
                                 </select>
                             </div>
-                            <div class="col-3 px-1 mb-3 d-flex align-items-center">
+                            <div class="col-3 px-1 mb-3 d-flex align-items-center"><span class="mx-2">بزرگسال</span>  
                                 <i class="fa fa-plus text-success pluss" style="cursor: pointer"
                                     onclick="counter('plus')"></i>
                                 <input type="text" class="form-control form-control-sm text-center mx-2 show-count"
                                     value="0" style="width: 20%" placeholder="تعداد">
                                 <i class="fa fa-minus text-danger minuss" style="cursor: pointer"
                                     onclick="counter('minus')"></i>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;کودک&nbsp;&nbsp;&nbsp;
+                                <i class="fa fa-plus text-success pluss mx-10" style="cursor: pointer"
+                                    onclick="counter('plus')"></i>
+                                <input type="text" class="form-control form-control-sm text-center mx-2 show-count"
+                                    value="0" style="width: 20%" placeholder="تعداد">
+                                <i class="fa fa-minus text-danger minuss" style="cursor: pointer"
+                                    onclick="counter('minus')"></i>
+                                    
                             </div>
                         </div>
 
@@ -296,14 +304,14 @@
                                     <option value="2">دو طرفه</option>
                                 </select>
                             </div>
-                            <div class="col-3 px-1 mb-3 d-flex align-items-center">
-                                <i class="fa fa-plus text-success pluss" style="cursor: pointer"
+                            {{-- <div class="col-3 px-1 mb-3 d-flex align-items-center">
+                               <i class="fa fa-plus text-success pluss" style="cursor: pointer"
                                     onclick="counter('plus')"></i>
-                                <input type="text" class="form-control form-control-sm text-center mx-2 show-count"
+                               <input type="text" class="form-control form-control-sm text-center mx-2 show-count"
                                     value="0" style="width: 20%" placeholder="تعداد">
                                 <i class="fa fa-minus text-danger minuss" style="cursor: pointer"
                                     onclick="counter('minus')"></i>
-                            </div>
+                            </div> --}}
                         </div>
 
                         <div class="row">
@@ -311,21 +319,20 @@
                                 <select class="form-control form-control-sm rounded-1 select-tags-province-two"
                                     style="width: 100%">
                                     <option></option>
-                                    <option value="1">کربلای معلی</option>
-                                    <option value="1">نجف اشرف</option>
-                                    <option value="1">شهر کاظمین</option>
+                                    <option value="3">اصفهان</option>
+                                    <option value="3">البرز</option>
+                                    <option value="3">تهران</option>
+                                    <option value="3">فارس</option>
+                                    <option value="3">مشهد</option>
                                 </select>
                             </div>
                             <div class="col-md-3 px-1 mb-3">
                                 <select class="form-control form-control-sm rounded-1 select-tags-terminal-two"
                                     style="width: 100%">
                                     <option></option>
-                                    <option value="1">پایانه مرزی مهران</option>
-                                    <option value="2">پایانه مرزی خسروی</option>
-                                    <option value="3">پایانه مرزی چذابه</option>
-                                    <option value="4">پایانه مرزی تمرچین</option>
-                                    <option value="5">پایانه مرزی باشماق</option>
-                                    <option value="6">پایانه مرزی شلمچه</option>
+                                    <option value="1">کربلای معلی</option>
+                                    <option value="1">نجف اشرف</option>
+                                    <option value="1">شهر کاظمین</option>
                                 </select>
                             </div>
                             <div class="col-md-2 px-1 mb-3">
