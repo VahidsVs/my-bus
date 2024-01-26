@@ -37,6 +37,23 @@
             border-radius: .5rem;
         }
 
+        .img-input-size {
+            width: 20px;
+            height: 20px;
+            border-radius: .2rem;
+            background-color: #cccccc
+        }
+
+        .background-color-f6f6f6 {
+            background-color: #f6f6f6;
+        }
+
+        .img-input-big-size {
+            width: 100px;
+            height: 80px;
+            border-radius: .2rem;
+        }
+
         .img-main {
             width: 100%;
             max-width: 100%;
@@ -81,6 +98,10 @@
 
         .box-shadow {
             box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, .1)
+        }
+
+        .peyma {
+            background-image: url("{{ asset('assets/img/passenger-company/iran-peyma.png') }}")
         }
     </style>
 </head>
@@ -190,40 +211,49 @@
                 </div>
             </div>
         </div>
-
-
         <div class="p-0 one-two-container">
             <div class="container-xxl box-shadow"
                 style="border-radius: 0 0 1rem 1rem;border: 1px solid #cccccc;border-top:none;background-color: #ffffff; display: flex; align-items: center;justify-content: center;width: 100%; padding: 40px 0">
                 <div class="container">
                     <form class="px-4">
-                        <div class="row">
-                            <div class="col-3 px-1 mb-3 ms-3">
-                                <select class="select2 form-select form-select rounded-1 select-tags-direction-one">
+                        <div class="row mb-3">
+                            <div class="col-lg-4 col-md-6 col px-1">
+                                <select
+                                    class="select2 form-select form-select rounded-1 select-tags-direction-one w-75">
                                     <option value="1">یک طرفه</option>
                                     <option value="2">دو طرفه</option>
                                 </select>
                             </div>
-                            <div class="col-3 px-1 mb-3 d-flex align-items-center"><span class="mx-2">بزرگسال</span>  
-                                <i class="fa fa-plus text-success pluss" style="cursor: pointer"
-                                    onclick="counter('plus')"></i>
-                                <input type="text" class="form-control form-control-sm text-center mx-2 show-count"
-                                    value="0" style="width: 20%" placeholder="تعداد">
-                                <i class="fa fa-minus text-danger minuss" style="cursor: pointer"
-                                    onclick="counter('minus')"></i>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;کودک&nbsp;&nbsp;&nbsp;
-                                <i class="fa fa-plus text-success pluss mx-10" style="cursor: pointer"
-                                    onclick="counter('plus')"></i>
-                                <input type="text" class="form-control form-control-sm text-center mx-2 show-count"
-                                    value="0" style="width: 20%" placeholder="تعداد">
-                                <i class="fa fa-minus text-danger minuss" style="cursor: pointer"
-                                    onclick="counter('minus')"></i>
-                                    
+
+                            <div class="col-lg-4 col-md-6 col">
+                                <div class="d-flex align-items-center">
+                                    <span class="mx-2">بزرگسال</span>
+                                    <i class="fa fa-plus text-success pluss" style="cursor: pointer"
+                                        onclick="counter('plus')"></i>
+                                    <input type="text"
+                                        class="form-control form-control-sm text-center mx-2 show-count"
+                                        value="0" style="width: 20%" placeholder="تعداد">
+                                    <i class="fa fa-minus text-danger minuss" style="cursor: pointer"
+                                        onclick="counter('minus')"></i>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col">
+                                <div class="d-flex align-items-center">
+                                    <span class="mx-2">کودک</span>
+                                    <i class="fa fa-plus text-success pluss" style="cursor: pointer"
+                                        onclick="counter('plus')"></i>
+                                    <input type="text"
+                                        class="form-control form-control-sm text-center mx-2 show-count"
+                                        value="0" style="width: 20%" placeholder="تعداد">
+                                    <i class="fa fa-minus text-danger minuss" style="cursor: pointer"
+                                        onclick="counter('minus')"></i>
+                                </div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-md-3 px-1 mb-3">
+                            <div class="col-lg-3 col-md-2 col px-1 mb-3">
                                 <select class="form-control form-control-sm rounded-1 select-tags-province-one">
                                     <option></option>
                                     <option value="1">آذربایجان شرقی</option>
@@ -260,7 +290,7 @@
                                     <option value="3">یزد</option>
                                 </select>
                             </div>
-                            <div class="col-md-3 px-1 mb-3">
+                            <div class="col-lg-3 col-md-2 col px-1 mb-3">
                                 <select class="form-control form-control-sm rounded-1 select-tags-terminal-one">
                                     <option></option>
                                     <option value="1">پایانه مرزی مهران</option>
@@ -271,15 +301,15 @@
                                     <option value="6">پایانه مرزی شلمچه</option>
                                 </select>
                             </div>
-                            <div class="col-md-2 px-1 mb-3">
+                            <div class="col-lg-2 col-md-1 col px-1 mb-3">
                                 <input type="text" class="form-control form-control-sm rounded-1"
                                     id="departure-date-one" placeholder="تاریخ رفت">
                             </div>
-                            <div class="col-md-2 px-1 mb-3">
+                            <div class="col-lg-2 col-md-1 col px-1 mb-3">
                                 <input type="text" class="form-control form-control-sm rounded-1"
                                     id="return-date-one" placeholder="تاریخ برگشت">
                             </div>
-                            <div class="col-md-1 px-1 mb-3">
+                            <div class="col-lg-1 col px-1 mb-3">
                                 <button type="submit" class="btn btn-sm btn-warning rounded-1 px-5">جستجو</button>
                             </div>
                         </div>
@@ -288,32 +318,39 @@
                 </div>
             </div>
         </div>
-
-
-
         <div class="p-0 three-four-five-container d-none">
             <div class="container-xxl box-shadow"
                 style="border-radius: 0 0 1rem 1rem;border: 1px solid #cccccc;border-top:none;background-color: #ffffff; display: flex; align-items: center;justify-content: center;width: 100%; padding: 40px 0">
                 <div class="container">
                     <form class="px-4">
-                        <div class="row">
-                            <div class="col-3 px-1 mb-3 ms-3">
+                        <div class="row mb-3">
+                            <div class="col-lg-3 col-md-6 col px-1 ms-3">
                                 <select class="select2 form-select form-select rounded-1 select-tags-direction-two"
                                     style="width: 100%">
                                     <option value="1">یک طرفه</option>
                                     <option value="2">دو طرفه</option>
                                 </select>
                             </div>
-                            {{-- <div class="col-3 px-1 mb-3 d-flex align-items-center">
-                               <i class="fa fa-plus text-success pluss" style="cursor: pointer"
-                                    onclick="counter('plus')"></i>
-                               <input type="text" class="form-control form-control-sm text-center mx-2 show-count"
-                                    value="0" style="width: 20%" placeholder="تعداد">
-                                <i class="fa fa-minus text-danger minuss" style="cursor: pointer"
-                                    onclick="counter('minus')"></i>
-                            </div> --}}
+                            <div class="col-lg-3 col-md-6 col">
+                                <select id="cmbIdioma" style="width:100%">
+                                    <option value="">ایران پیما</option>
+                                    <option value="">همسفر</option>
+                                    <option value="">آریا سفر</option>
+                                    <option value="">گیتی پیما</option>
+                                    <option value="">آسیا سفر</option>
+                                    <option value="">ماهان سفر</option>
+                                    <option value="">پی ام تی</option>
+                                    <option value="">عدل</option>
+                                    <option value="">ایران پیمان</option>
+                                    <option value="">آرتا</option>
+                                    <option value="">سفرسیر</option>
+                                    <option value="">مارال سیر ایرانیان</option>
+                                    <option value="">سپهر آسیا</option>
+                                    <option value="">رویال سفر ایرانیان</option>
+                                    <option value="">سیروسفر</option>
+                                </select>
+                            </div>
                         </div>
-
                         <div class="row">
                             <div class="col-md-3 px-1 mb-3">
                                 <select class="form-control form-control-sm rounded-1 select-tags-province-two"
@@ -347,13 +384,108 @@
                                 <button type="submit" class="btn btn-sm btn-warning rounded-1 px-5">جستجو</button>
                             </div>
                         </div>
-
                     </form>
                 </div>
             </div>
         </div>
     </div>
     <!-- Service End -->
+
+    {{-- list sherkat mosaferbari --}}
+    <section class="background-color-f6f6f6 py-5">
+        <section class="container-xxl">
+            <div class="mb-5">
+                <h2 class="text-center">لیست شرکت های مسافربری</h2>
+            </div>
+
+            <div class="row">
+                <div class="col col-lg-2 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/iran-peyma.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">ایران پیما</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/HMSFR.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">همسفر</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/T11.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">آریا سفر</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/ASYSFR.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">گیتی پیما</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/ASYSFR.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">آسیا سفر</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/MAHAN.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">ماهان سفر</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/IRNPYMN.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">ایران پیمان</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/ARTA.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">آرتا سبلان</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/T03.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">سفرسیر</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/T10.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">مارال سیر ایرانیان</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/ROYAL.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">رویال سفر ایرانیان</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/SYRSFR.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">سیروسفر</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" style="margin-top: 40px;"
@@ -440,6 +572,22 @@
 
     {{-- select2 --}}
     <script>
+        $("#cmbIdioma").select2({
+            templateResult: function(inputImage) {
+                console.log(inputImage.id);
+                var $span = $(
+                    "<span><img src='{{ asset('assets/img/bus-logo.png') }}' class='img-input-size'> " +
+                    inputImage.text + "</span>");
+                return $span;
+            },
+            // templateSelection: function(inputImage) {
+            //     var $span = $(
+            //         "<span><img src='{{ asset('assets/img/bus-1.jpeg') }}' class='img-input-size'> " +
+            //         inputImage.text + "</span>");
+            //     return $span;
+            // }
+        });
+
         $(document).ready(function() {
             $("#departure-date-one").persianDatepicker({
                 format: 'YYYY/MM/DD'
@@ -484,6 +632,12 @@
             var select_tags_province_two = $('.select-tags-province-two');
             var select_tags_terminal_two = $('.select-tags-terminal-two');
             var select_tags_direction_two = $('.select-tags-direction-two');
+            var select_select_tags_company_two = $('.select-tags-company-two');
+
+            select_select_tags_company_two.select2({
+                placeholder: 'شرکت مسافربری',
+                allowClear: true
+            });
 
             select_tags_direction_two.select2({
                 minimumResultsForSearch: -1
