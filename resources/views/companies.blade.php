@@ -118,63 +118,108 @@
     <!-- Navbar End -->
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0">
-        <img class="img-fluid img-main" src="{{ asset('assets/img/bus-2.avif') }}" alt="" />
-    </div>
+
     <!-- Carousel End -->
 
     <!-- Service Start -->
-    <div class="py-5">
-        <div class="container-xxl box-shadow" style="border: 1px solid #cccccc; border-radius: 1rem 1rem 0 0;background-color: #ffffff">
-            <div class="container">
-                <div class="nav nav-tabs border-bottom-0 border-top-0" id="nav-tab" role="tablist">
-                    <button class="nav-link f-14px active" id="nav-darbast-tab" data-bs-toggle="tab" data-bs-target="#nav-darbast" type="button" role="tab" aria-controls="nav-darbast" aria-selected="true" style="color: rgb(0, 0, 0);">دربستی</button>
-                    <button class="nav-link f-14px " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false" style="color: rgb(0, 0, 0);">درون شهری (ناوگان حمل نقل درون شهری / برون شهری)</button>
-                    <button class="nav-link f-14px" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" style="color: rgb(0, 0, 0);">برون شهری</button>
-                    <button class="nav-link f-14px" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" style="color: rgb(0, 0, 0);">برون مرزی</button>
-                  </div>
+  
+    <!-- Service End -->
+
+       {{-- list sherkat mosaferbari --}}
+       <section class="background-color-f6f6f6 py-5">
+        <section class="container-xxl">
+            <div class="mb-5">
+                <h2 class="text-center">لیست شرکت های مسافربری</h2>
             </div>
-        </div>
-        <div class="p-0">
-            <div class="container-xxl box-shadow"
-                style="border-radius: 0 0 1rem 1rem;border: 1px solid #cccccc;border-top:none;background-color: #ffffff; display: flex; align-items: center;justify-content: center;width: 100%; padding: 40px 0">
-                <div class="container">
-                    <form class="px-4">
-                        <div class="row">
-                            <div class="col-3 px-1 mb-3">
-                                <select class="form-select form-select rounded-1">
-                                    <option value="1">یک طرفه</option>
-                                    <option value="2">دو طرفه</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3 px-1 mb-3">
-                                <input type="text" class="form-control rounded-1" id="validationServer01"
-                                    placeholder="مبدا(شهر)">
-                            </div>
-                            <div class="col-md-3 px-1 mb-3">
-                                <input type="text" class="form-control rounded-1" id="validationServer02"
-                                    placeholder="مقصد(شهر)">
-                            </div>
-                            <div class="col-md-2 px-1 mb-3">
-                                <input type="text" class="form-control rounded-1" id="validationServer01"
-                                    placeholder="تاریخ رفت">
-                            </div>
-                            <div class="col-md-2 px-1 mb-3">
-                                <input type="text" class="form-control rounded-1" id="validationServer02"
-                                    placeholder="تاریخ برگشت">
-                            </div>
-                            <div class="col-md-1 px-1 mb-3">
-                                <button type="submit" class="btn btn-warning rounded-1 px-5">جستجو</button>
-                            </div>
-                        </div>
-                    </form>
+
+            <div class="row">
+                <div class="col col-lg-2 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/iran-peyma.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">ایران پیما</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/HMSFR.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">همسفر</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/T11.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">آریا سفر</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/ASYSFR.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">گیتی پیما</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/ASYSFR.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">آسیا سفر</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/MAHAN.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">ماهان سفر</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/IRNPYMN.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">ایران پیمان</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/ARTA.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">آرتا سبلان</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/T03.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">سفرسیر</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/T10.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">مارال سیر ایرانیان</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/ROYAL.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">رویال سفر ایرانیان</h5>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-3 my-1 box-shadow">
+                    <div class="d-flex flex-column justify-content-center align-items-center p-4">
+                        <img src="{{ asset('assets/img/passenger-company/SYRSFR.png') }}"
+                            class="img-focus img-input-big-size" alt="ایران پیما">
+                        <h5 class="mt-3">سیروسفر</h5>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Service End -->
+        </section>
+    </section>
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" style="margin-top: 40px;" data-wow-delay="0.1s">

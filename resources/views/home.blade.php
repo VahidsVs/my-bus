@@ -96,6 +96,7 @@
                 <a href="#" class="nav-item nav-link">دربستی</a>
                 <a href="#" class="nav-item nav-link">اربعین</a>
                 <a href="#" class="nav-item nav-link">سامانه رزرواسیون مراکز اقامتی</a>
+                <a href="{{ route('home.companies') }}" class="nav-item nav-link">لیست شرکت ها</a>
             </div>
             <h4 class="ms-4 pe-lg-5 d-none d-lg-block">۰۲۱-۲۳۴۵۶<i class="fas fa-headphones-alt text-primary me-3"></i>
             </h4>

@@ -25,4 +25,8 @@ class HomeController extends Controller
     {
         return view('pilgrimage');
     }
+    public function companies()
+    {
+        return view('companies');
+    }
 }
