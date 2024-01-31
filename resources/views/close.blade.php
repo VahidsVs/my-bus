@@ -129,7 +129,8 @@
             <div class="container">
                 <div class="nav nav-tabs border-bottom-0 border-top-0" id="nav-tab" role="tablist">
                     <button class="nav-link f-14px active" id="nav-darbast-tab" data-bs-toggle="tab" data-bs-target="#nav-darbast" type="button" role="tab" aria-controls="nav-darbast" aria-selected="true" style="color: rgb(0, 0, 0);">دربستی</button>
-                    <button class="nav-link f-14px " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false" style="color: rgb(0, 0, 0);">درون شهری (ناوگان حمل نقل درون شهری / برون شهری)</button>
+                    <button class="nav-link f-14px " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false" style="color: rgb(0, 0, 0);">درون شهری - ناوگان حمل و نقل درون شهری</button>
+                    <button class="nav-link f-14px " id="nav-home1tab" data-bs-toggle="tab" data-bs-target="#nav-home1" type="button" role="tab" aria-controls="nav-home1" aria-selected="false" style="color: rgb(0, 0, 0);">درون شهری - ناوگان حمل و نقل برون شهری</button>
                     <button class="nav-link f-14px" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" style="color: rgb(0, 0, 0);">برون شهری</button>
                     <button class="nav-link f-14px" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" style="color: rgb(0, 0, 0);">برون مرزی</button>
                   </div>

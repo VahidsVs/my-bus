@@ -612,10 +612,10 @@
             deleteAllCalss();
             var result = parseInt(0);
             $('.show-count').val(result);
-            if (data == 'one' || data == 'two') {
+            if (data == 'one' || data == 'three') {
                 $('.one-two-container').addClass('d-inline');
                 $('.three-four-five-container').addClass('d-none');
-            } else if (data == 'three' || data == 'four' || data == 'five') {
+            } else if (data == 'two' || data == 'four' || data == 'five') {
                 $('.three-four-five-container').addClass('d-inline');
                 $('.one-two-container').addClass('d-none');
             }
