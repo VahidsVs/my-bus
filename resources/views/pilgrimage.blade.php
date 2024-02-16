@@ -199,14 +199,14 @@
                         data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
                         aria-controls="nav-contact" aria-selected="false" style="color: rgb(0, 0, 0);">کشور عراق -
                         فروش بلیط مسافر</button>
-                    <button onclick="myFunc('four')" class="nav-link f-14px" id="nav-close-processioners"
-                        data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
-                        aria-controls="nav-contact" aria-selected="false" style="color: rgb(0, 0, 0);">کشور عراق -
-                        دربستی ویژه موکبداران</button>
                     <button onclick="myFunc('five')" class="nav-link f-14px" id="nav-close-public"
                         data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
                         aria-controls="nav-contact" aria-selected="false" style="color: rgb(0, 0, 0);">کشور عراق -
                         دربستی عمومی</button>
+                    <button onclick="myFunc('four')" class="nav-link f-14px" id="nav-close-processioners"
+                        data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
+                        aria-controls="nav-contact" aria-selected="false" style="color:#000000;background:linear-gradient(to top right, #ccff33 0%, #66ff33 100%);;font-weight:bold;">کشور عراق -
+                        دربستی ویژه موکبداران</button>
                 </div>
             </div>
         </div>
@@ -220,8 +220,8 @@
                         {{-- one row --}}
                         <div class="row mb-3">
                             <div class="col-lg-4 col-md-6 col px-1">
-                                <select
-                                    class="select2 form-select form-select rounded-1 select-tags-direction-one" style="width: 74.2%">
+                                <select class="select2 form-select form-select rounded-1 select-tags-direction-one"
+                                    style="width: 74.2%">
                                     <option value="1">یک طرفه</option>
                                     <option value="2">دو طرفه</option>
                                 </select>
@@ -330,7 +330,8 @@
                         {{-- one row --}}
                         <div class="row mb-6">
                             <div class="col-lg-2 col-md-6 col px-1 ms-3">
-                                <select class="select2 form-select form-select rounded-1 select-tags-direction-two" style="width: 100%">
+                                <select class="select2 form-select form-select rounded-1 select-tags-direction-two"
+                                    style="width: 100%">
                                     <option value="1">یک طرفه</option>
                                     <option value="2">دو طرفه</option>
                                 </select>
