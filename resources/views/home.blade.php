@@ -92,9 +92,9 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto pe-3 p-lg-0">
                 <a href="{{ route('home.index') }}" class="nav-item nav-link active">خانه</a>
-                <a href="#" class="nav-item nav-link">فروش بلیط مسافر</a>
-                <a href="#" class="nav-item nav-link">دربستی</a>
-                <a href="#" class="nav-item nav-link">اربعین</a>
+                <a href="{{ route('home.ticket') }}" class="nav-item nav-link">فروش بلیط مسافر</a>
+                <a href="{{ route('home.close') }}" class="nav-item nav-link">دربستی</a>
+                <a href="{{ route('home.pilgrimage') }}" class="nav-item nav-link">اربعین</a>
                 <a href="#" class="nav-item nav-link">سامانه رزرواسیون مراکز اقامتی</a>
                 <a href="{{ route('home.companies') }}" class="nav-item nav-link">لیست شرکت ها</a>
             </div>

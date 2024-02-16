@@ -198,8 +198,7 @@
                     <button onclick="myFunc('three')" class="nav-link f-14px" id="nav-ticket-foreign"
                         data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
                         aria-controls="nav-contact" aria-selected="false" style="color: rgb(0, 0, 0);">کشور عراق -
-                        فروش بلیط مسافر
-                        مرزی</button>
+                        فروش بلیط مسافر</button>
                     <button onclick="myFunc('four')" class="nav-link f-14px" id="nav-close-processioners"
                         data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab"
                         aria-controls="nav-contact" aria-selected="false" style="color: rgb(0, 0, 0);">کشور عراق -
@@ -211,15 +210,18 @@
                 </div>
             </div>
         </div>
+
         <div class="p-0 one-two-container">
             <div class="container-xxl box-shadow"
                 style="border-radius: 0 0 1rem 1rem;border: 1px solid #cccccc;border-top:none;background-color: #ffffff; display: flex; align-items: center;justify-content: center;width: 100%; padding: 40px 0">
                 <div class="container">
                     <form class="px-4">
+
+                        {{-- one row --}}
                         <div class="row mb-3">
                             <div class="col-lg-4 col-md-6 col px-1">
                                 <select
-                                    class="select2 form-select form-select rounded-1 select-tags-direction-one w-75">
+                                    class="select2 form-select form-select rounded-1 select-tags-direction-one" style="width: 74.2%">
                                     <option value="1">یک طرفه</option>
                                     <option value="2">دو طرفه</option>
                                 </select>
@@ -252,6 +254,7 @@
                             </div>
                         </div>
 
+                        {{-- second row --}}
                         <div class="row">
                             <div class="col-lg-3 col-md-2 col px-1 mb-3">
                                 <select class="form-control form-control-sm rounded-1 select-tags-province-one">
@@ -318,15 +321,16 @@
                 </div>
             </div>
         </div>
+
         <div class="p-0 three-four-five-container d-none">
             <div class="container-xxl box-shadow"
                 style="border-radius: 0 0 1rem 1rem;border: 1px solid #cccccc;border-top:none;background-color: #ffffff; display: flex; align-items: center;justify-content: center;width: 100%; padding: 40px 0">
                 <div class="container">
                     <form class="px-4">
+                        {{-- one row --}}
                         <div class="row mb-6">
                             <div class="col-lg-2 col-md-6 col px-1 ms-3">
-                                <select class="select2 form-select form-select rounded-1 select-tags-direction-two"
-                                    style="width: 100%">
+                                <select class="select2 form-select form-select rounded-1 select-tags-direction-two" style="width: 100%">
                                     <option value="1">یک طرفه</option>
                                     <option value="2">دو طرفه</option>
                                 </select>
@@ -346,6 +350,7 @@
                                 <select class="select2 form-select form-select rounded-1 select-tags-direction-two"
                                     style="width: 100%">
                                     <option selected disabled>ظرفیت اتوبوس</option>
+                                    <option value="1">25 نفره</option>
                                     <option value="1">26 نفره</option>
                                     <option value="2">32 نفره</option>
                                     <option value="2">44 نفره</option>
@@ -392,25 +397,59 @@
                             </div> --}}
                         </div>
                         <br>
+                        {{-- two row --}}
                         <div class="row">
                             <div class="col-md-3 px-1 mb-3">
                                 <select class="form-control form-control-sm rounded-1 select-tags-province-two"
                                     style="width: 100%">
                                     <option></option>
+                                    <option value="1">آذربایجان شرقی</option>
+                                    <option value="2">آذربایجان غربی</option>
+                                    <option value="3">اردبیل</option>
                                     <option value="3">اصفهان</option>
                                     <option value="3">البرز</option>
+                                    <option value="3">اردبیل</option>
+                                    <option value="3">ایلام</option>
+                                    <option value="3">بوشهر</option>
                                     <option value="3">تهران</option>
+                                    <option value="3">چهارمحال و بختیاری</option>
+                                    <option value="3">خراسان جنوبی</option>
+                                    <option value="3">خراسان رضوی</option>
+                                    <option value="3">خراسان شمالی</option>
+                                    <option value="3">خوزستان</option>
+                                    <option value="3">زنجان</option>
+                                    <option value="3">سمنان</option>
+                                    <option value="3">سیستان و بلوچستان</option>
                                     <option value="3">فارس</option>
-                                    <option value="3">مشهد</option>
+                                    <option value="3">قزوین</option>
+                                    <option value="3">قم</option>
+                                    <option value="3">کردستان</option>
+                                    <option value="3">کرمان</option>
+                                    <option value="3">کرمانشاه</option>
+                                    <option value="3">کهگیلویه و بویراحمد</option>
+                                    <option value="3">گلستان</option>
+                                    <option value="3">گیلان</option>
+                                    <option value="3">لرستان</option>
+                                    <option value="3">مازندران</option>
+                                    <option value="3">مرکزی</option>
+                                    <option value="3">هرمزگان</option>
+                                    <option value="3">همدان</option>
+                                    <option value="3">یزد</option>
                                 </select>
                             </div>
                             <div class="col-md-3 px-1 mb-3">
                                 <select class="form-control form-control-sm rounded-1 select-tags-terminal-two"
                                     style="width: 100%">
                                     <option></option>
-                                    <option value="1">کربلای معلی</option>
+                                    <option value="1">پایانه مرزی مهران</option>
+                                    <option value="2">پایانه مرزی خسروی</option>
+                                    <option value="3">پایانه مرزی چذابه</option>
+                                    <option value="4">پایانه مرزی تمرچین</option>
+                                    <option value="5">پایانه مرزی باشماق</option>
+                                    <option value="6">پایانه مرزی شلمچه</option>
+                                    {{-- <option value="1">کربلای معلی</option>
                                     <option value="1">نجف اشرف</option>
-                                    <option value="1">شهر کاظمین</option>
+                                    <option value="1">شهر کاظمین</option> --}}
                                 </select>
                             </div>
                             <div class="col-md-2 px-1 mb-3">
@@ -431,8 +470,6 @@
         </div>
     </div>
     <!-- Service End -->
-
- 
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" style="margin-top: 40px;"
